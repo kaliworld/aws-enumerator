@@ -19,7 +19,7 @@ jobs:
 
     - name: Build for Windows
       run: |
-        GOOS=windows GOARCH=amd64 go build -v -o myapp.exe ./...
+        GOOS=windows GOARCH=amd64 go build -v -o myapp.exe .
 
     - name: Archive build artifacts
       uses: actions/upload-artifact@v3
